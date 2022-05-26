@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Kasus" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/jml_kasus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{}" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Sembuh" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/jml_sembuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{}" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Meninggal" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/jml_meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{}" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Dirawat" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/jml_dirawat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{}" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin :" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipJenisKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label"
+                    app:singleLine="false"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umur :" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipUmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label"
+                    app:singleLine="false"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
